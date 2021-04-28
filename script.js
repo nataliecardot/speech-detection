@@ -8,6 +8,7 @@ recognition.lang = 'en-US';
 let p = document.createElement('p');
 const words = document.querySelector('.words');
 words.appendChild(p);
+p.textContent = 'Say something...';
 
 recognition.addEventListener('result', (e) => {
   // For each item in the array (that usually has one or two items each named SpeechRecognitionResult), which is itself an array, taking its first item, which is the SpeechRecognitionAlternative, then mapping over that nested array and returning a new array that only has the transcript property
